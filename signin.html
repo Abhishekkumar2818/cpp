@@ -1,0 +1,91 @@
+</html>
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+<title>
+       sign in form</title>
+<style type="text/css">
+#body{
+      margin:0;
+}
+.container{
+           width:500px;
+           height:400px;
+           text-align:center;
+           background-color:skyblue;
+           opacity:0.85;
+           border-radius:4px;
+           margin:0 auto;
+           margin-top:150px;
+}
+.container img{
+      width:120px;
+      height:120px;
+      margin-top:-60px;
+      margin-bottom:30px;
+}
+input[type="text"], input[type="password"]{
+     height:45px;
+     width:300px;
+     font-size:18px;
+     margin-bottom:20px;
+     background-color:#fff;
+     padding-left:20px;
+}
+.btn-login{
+        padding:15px;
+        color:white;
+        background-color:red;
+        border:none;
+        border-radius:4px;
+        border-bottom:4px solid red;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+a:hover{
+      color:black;
+}
+</style>
+</head>
+<body background= "public/images/user3.jpg">
+<div class="container">
+<img src="public/images/LPU-logo.png"/>
+    <form>
+         <div class="form-input">
+             <input type="text" id="username" placeholder="Enter Username">
+         </div>
+         <div class="form-input">
+           <input type="password" id="password" placeholder="Enter Password">
+         </div>
+        <button type="button" class="btn-login" onclick="myf()">
+          Login
+        </button>
+    </form><br>
+    <a href="#">Forget password?</a>
+	<p>If you don't have an account,.. <a href="registration_form.html">SIGNUP</a></p>
+<h3>
+<a href="index.html" style="color: black">
+Home Page
+</a>
+</h3>
+</div>
+<lower>
+</lower>
+<script>
+function myf(){
+  var username=$('#username').val();
+  var password=$('#password').val();
+  if(username=='Biren'&&password=='biren@01'){
+    window.location.href="user_profile.html";
+  }
+  else alert('Wrong Username or Password');
+}
+</script>
+</body>
+</html>
